@@ -18,6 +18,13 @@ app.get('/', (req, res) => {
   res.send('Hello World');
 });
 
+app.get('/all', (req, res) => {
+  const projectData = {
+    clients: 1
+  };
+  res.send(projectData);
+});
+
 app.listen(PORT, HOST, () => {
   console.log(`Running on http://${HOST}:${PORT}`);
 });

@@ -19,3 +19,5 @@ docker logs -f cool_moore
 docker kill cool_moore
 
 docker exec -it agitated_ellis /bin/bas
+
+curl -i localhost:49160
